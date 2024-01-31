@@ -1,14 +1,14 @@
 package school.mjc.stage0.loops.task3;
 
 public class NinesSum {
-    public void calculateSum(int lengthOfLastNumber) {
-        int sum = 0;
-        for (int r = 1; r <= lengthOfLastNumber; r++) {
-            for (int j = 1; j <= r; j++) {
-                System.out.println("9");
+    public void calculateSum(int lengthOfLastNumber ) {
+        int t=9;
+        int sum =0;
+        for (int i = 1; i <= lengthOfLastNumber ; i++) {
+            sum +=t;
 
-            }
-            // result.append(System.lineSeparator());
+            t = t*10+9;
         }
+        System.out.println(sum);
     }
 }
